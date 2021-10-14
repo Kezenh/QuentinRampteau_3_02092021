@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*Variables*/
 * {
   margin: 0;
   padding: 0;
@@ -35,16 +37,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 40px;
+  padding: 40px 20px 57px;
 }
 .introduction__h1 {
-  font-size: 1rem;
   text-align: center;
+  font-size: 1.5rem;
 }
 .introduction__h2 {
-  font-size: 1rem;
   padding-bottom: 31px;
   font-weight: normal;
   text-align: center;
@@ -52,21 +51,49 @@ header {
 
 .btn {
   display: block;
-  background: linear-gradient(165deg, #FF79DA, #9356DC);
   text-decoration: none;
-  color: black;
-  height: 50px;
-  width: 218px;
-  border-radius: 25px;
-  box-shadow: 0px 8px 8px #cfcfcf;
-  margin-bottom: 57px;
 }
-.btn__containeur {
-  height: 100%;
+.btn__base {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.btn__base--réservez {
+  height: 50px;
+  width: 218px;
+  background: linear-gradient(165deg, #FF79DA, #9356DC);
   color: white;
+  border-radius: 25px;
+  box-shadow: 0px 8px 8px #cfcfcf;
+}
+.btn__base--fonctionnement {
+  width: 322px;
+  height: 72px;
+  background: #f6f6f6;
+  margin-bottom: 25px;
+  border-radius: 17px;
+  justify-content: flex-start;
+  padding-left: 34px;
+}
+.btn__base--fonctionnement:hover {
+  background: #f5edff;
+}
+.btn__base--fonctionnement:hover .btn__base--fonctionnement__icônes {
+  color: #9356dc;
+}
+.btn__base--fonctionnement__icônes {
+  width: 20px;
+  height: 20px;
+  margin-right: 21px;
+}
+
+.fonctionnement {
+  padding-left: 20px;
+  padding-top: 50px;
+}
+.fonctionnement__h2 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
