@@ -97,17 +97,118 @@ header {
                 width: 20px;
                 height: 20px;
                 margin-right: 21px;
+                color: #7e7e7e;
+            }
+        }
+
+        &--nouveau {
+            width: 81px;
+            height: 29px;
+            background: $tertiary-color;
+            position: relative;
+            bottom: 238px;
+            left: 249px;
+            color: #008766;
+
+            &--disabled {
+                display: none;
             }
         }
     }
 }
 
-.fonctionnement {
-    padding-left: 20px;
-    padding-top: 50px;
+.puce {
+    background: $primary-color;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    left: -47px;
+    color: white;
+}
+
+.sec {
+    padding: 50px 0px 68px 20px;
+
+    &--fond-gris {
+        background: #f6f6f6;
+    }
+
+    &--court {
+        padding-bottom: 46px;
+    }
 
     &__h2 {
         font-size: $h-font-size;
         margin-bottom: 30px;
+    }
+}
+
+.carte {
+    display: block;
+    text-decoration: none;
+    height: 251px;
+    width: 341px;
+    margin-bottom: 18px;
+    background: white;
+
+    &__boite {
+        height: 174px;
+        overflow: hidden;
+        
+        &__image {
+            object-fit: cover;
+            width: 341px;
+            height: 184px;
+        }
+    }
+
+    &__description {
+        height: 77px;
+        display: flex;
+
+        &__texte {
+            width: 291px;
+            height: 100%;
+        }
+
+        &__coeur {
+            width: 50px;
+            height: 100%;
+
+            &__logo {
+                color: black;
+            }
+        }
+    }
+}
+
+footer {
+    background: #353535;
+    padding: 26px 0px 0px 20px;
+    color: white; 
+}
+
+.ul_footer {
+    list-style: none;
+    padding: 15px 0px 25px;
+
+    &__li {
+        display: flex;
+        align-items: center;
+
+        &__image {
+            width: 12px;
+            height: 13px;
+            margin-right: 12px;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: white;
+        }
     }
 }
