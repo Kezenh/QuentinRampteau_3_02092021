@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-size: 1rem;
   line-height: 1.5rem;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -74,6 +75,7 @@ header {
   border-radius: 17px;
   justify-content: flex-start;
   padding-left: 34px;
+  margin-left: 13px;
 }
 .btn__base--fonctionnement:hover {
   background: #f5edff;
@@ -95,9 +97,6 @@ header {
   bottom: 238px;
   left: 249px;
   color: #008766;
-}
-.btn__base--nouveau--disabled {
-  display: none;
 }
 
 .puce {
@@ -134,6 +133,8 @@ header {
   width: 341px;
   margin-bottom: 18px;
   background: white;
+  border-radius: 13px;
+  overflow: hidden;
 }
 .carte__boite {
   height: 174px;
@@ -147,17 +148,38 @@ header {
 .carte__description {
   height: 77px;
   display: flex;
+  align-items: center;
 }
 .carte__description__texte {
   width: 291px;
   height: 100%;
 }
+.carte__description__texte__h3 {
+  padding: 20px 0px 0px 14px;
+}
+.carte__description__texte__p {
+  padding-left: 14px;
+  font-weight: 300;
+}
 .carte__description__coeur {
-  width: 50px;
-  height: 100%;
+  width: 22px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carte__description__coeur:hover .carte__description__coeur__logo--click {
+  opacity: 1;
 }
 .carte__description__coeur__logo {
-  color: black;
+  width: 22px;
+  height: 21px;
+}
+.carte__description__coeur__logo--click {
+  position: absolute;
+  color: #FF79DA;
+  opacity: 0;
+  transition: opacity 250ms;
 }
 
 footer {
