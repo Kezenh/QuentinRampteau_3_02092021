@@ -9,6 +9,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  color: black;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -113,17 +117,30 @@ header {
 }
 
 .sec {
-  padding: 50px 0px 68px 20px;
+  width: 350px;
+  padding: 50px 0px 43px;
+  margin: auto;
 }
-.sec--fond-gris {
-  background: #f6f6f6;
+@media (min-width: 767px) {
+  .sec {
+    width: 767px;
+  }
 }
-.sec--court {
-  padding-bottom: 46px;
+@media (min-width: 1024px) {
+  .sec {
+    width: 90%;
+  }
+}
+.sec__box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .sec__h2 {
   font-size: 1.5rem;
   margin-bottom: 30px;
+  align-self: flex-start;
 }
 
 .carte {
@@ -189,8 +206,13 @@ footer {
 }
 
 .ul_footer {
-  list-style: none;
   padding: 15px 0px 25px;
+}
+@media (min-width: 767px) {
+  .ul_footer {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 .ul_footer__li {
   display: flex;
@@ -204,6 +226,10 @@ footer {
 .ul_footer__li__link {
   text-decoration: none;
   color: white;
+}
+
+.greybg {
+  background: #f6f6f6;
 }
 
 /*# sourceMappingURL=style.css.map */
