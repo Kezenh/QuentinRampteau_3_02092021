@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -75,11 +78,10 @@ header {
   width: 322px;
   height: 72px;
   background: #f6f6f6;
-  margin-bottom: 25px;
   border-radius: 17px;
   justify-content: flex-start;
   padding-left: 34px;
-  margin-left: 13px;
+  margin: 0px 0px 25px 13px;
 }
 .btn__base--fonctionnement:hover {
   background: #f5edff;
@@ -101,6 +103,30 @@ header {
   bottom: 238px;
   left: 249px;
   color: #008766;
+}
+.btn__base--dish {
+  width: 349px;
+  height: 68px;
+  border-radius: 15px;
+  margin-top: 14px;
+  background: white;
+}
+.btn__base--dish__text {
+  width: 277px;
+  height: 100%;
+  padding: 13px 0px 0px 10px;
+}
+.btn__base--dish__price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 15px;
+  width: 72px;
+  height: 100%;
+}
+.btn__base--dish__check {
+  width: 0px;
+  height: 100%;
 }
 
 .puce {
@@ -178,21 +204,22 @@ header {
   padding-left: 14px;
   font-weight: 300;
 }
-.carte__description__coeur {
+
+.heart {
   width: 22px;
   height: 21px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.carte__description__coeur:hover .carte__description__coeur__logo--click {
+.heart:hover .heart__logo--click {
   opacity: 1;
 }
-.carte__description__coeur__logo {
+.heart__logo {
   width: 22px;
   height: 21px;
 }
-.carte__description__coeur__logo--click {
+.heart__logo--click {
   position: absolute;
   color: #FF79DA;
   opacity: 0;
@@ -230,6 +257,36 @@ footer {
 
 .greybg {
   background: #f6f6f6;
+}
+
+.arrow {
+  width: 18px;
+  height: 16px;
+  position: absolute;
+  left: 23px;
+}
+
+.h-img {
+  width: 100%;
+  height: 260px;
+}
+
+.menu {
+  position: relative;
+  top: -45px;
+  border-radius: 38px;
+  padding: 39px 12px 0px 19px;
+}
+.menu__heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 26px 45px 0px;
+  font-family: "Shrikhand", cursive;
+}
+.menu__part__line {
+  width: 40px;
+  height: 3px;
+  background: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */
