@@ -145,6 +145,9 @@ header {
 .btn__base--dish--8 {
   animation: dish 1000ms 500ms;
 }
+.btn__base--dish--9 {
+  animation: dish 1000ms 550ms;
+}
 .btn__base--dish:hover .btn__base--dish__check {
   width: 59px;
 }
@@ -331,6 +334,7 @@ footer {
 .h-img {
   width: 100%;
   height: 260px;
+  object-fit: cover;
 }
 
 .menu {
@@ -364,6 +368,16 @@ footer {
 .menu__box {
   display: flex;
   flex-direction: column;
+  width: 341px;
+  margin: auto;
+}
+@media (min-width: 767px) {
+  .menu__box {
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 @keyframes dish {

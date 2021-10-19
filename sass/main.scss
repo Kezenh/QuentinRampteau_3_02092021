@@ -136,7 +136,7 @@ header {
             cursor: pointer;
             position: relative;
 
-            @for $i from 0 through 8 {
+            @for $i from 0 through 9 {
                 &--#{$i} {
                     animation: dish 1000ms ($i*50)+100ms;
                 }
@@ -353,6 +353,7 @@ footer {
 .h-img {
     width: 100%;
     height: 260px;
+    object-fit: cover;
 }
 
 .menu {
@@ -390,6 +391,15 @@ footer {
     &__box {
         display: flex;
         flex-direction: column;
+        width: 341px;
+        margin: auto;
+
+        @media (min-width: 767px) {
+            width: 90%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
     }
 }
 
