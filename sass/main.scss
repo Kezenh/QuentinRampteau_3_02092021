@@ -85,6 +85,11 @@ header {
             color: white;
             border-radius: 25px;
             box-shadow: 0px 8px 8px #cfcfcf;
+
+            &:hover {
+                box-shadow: 0px 12px 12px grey ;
+                background: linear-gradient(165deg, darken($secondary-color, 30%) , darken($primary-color, 30%));
+            }
         }
 
         &--fonctionnement {
@@ -351,16 +356,21 @@ footer {
 }
 
 .menu {
-    position: relative;
-    top: -45px;
-    border-radius: 38px;
-    padding: 39px 12px 0px 19px;
+    padding: 0px 12px 0px 19px;
 
     &__heading {
         display: flex;
         justify-content: space-between;
+        align-items: flex-end;
         padding: 0px 26px 5px 0px;
         font-family: $heading-font-family;
+        position: relative;
+        top: -45px;
+        border-radius: 38px;
+        background: #f6f6f6;
+        height: 76px;
+        margin: 0px -12px -40px -19px;
+        padding: 0px 12px 0px 19px;
 
         &__h1{
             font-size: 1.6rem;
@@ -392,4 +402,12 @@ footer {
         top: 0px;
         opacity: 1;
     }
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 83px;
 }
