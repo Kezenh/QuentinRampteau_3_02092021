@@ -112,6 +112,34 @@ header {
   background: white;
   overflow: hidden;
   cursor: pointer;
+  position: relative;
+}
+.btn__base--dish--0 {
+  animation: dish 1000ms 100ms;
+}
+.btn__base--dish--1 {
+  animation: dish 1000ms 150ms;
+}
+.btn__base--dish--2 {
+  animation: dish 1000ms 200ms;
+}
+.btn__base--dish--3 {
+  animation: dish 1000ms 250ms;
+}
+.btn__base--dish--4 {
+  animation: dish 1000ms 300ms;
+}
+.btn__base--dish--5 {
+  animation: dish 1000ms 350ms;
+}
+.btn__base--dish--6 {
+  animation: dish 1000ms 400ms;
+}
+.btn__base--dish--7 {
+  animation: dish 1000ms 450ms;
+}
+.btn__base--dish--8 {
+  animation: dish 1000ms 500ms;
 }
 .btn__base--dish:hover .btn__base--dish__check {
   width: 59px;
@@ -327,6 +355,17 @@ footer {
 .menu__box {
   display: flex;
   flex-direction: column;
+}
+
+@keyframes dish {
+  0% {
+    top: 50px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

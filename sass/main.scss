@@ -129,6 +129,13 @@ header {
             background: white;
             overflow: hidden;
             cursor: pointer;
+            position: relative;
+
+            @for $i from 0 through 8 {
+                &--#{$i} {
+                    animation: dish 1000ms ($i*50)+100ms;
+                }
+            }
 
             &:hover {
 
@@ -155,7 +162,6 @@ header {
                 }
             }
 
-                
             &__price {
                 display: flex;
                 justify-content: center;
@@ -374,5 +380,16 @@ footer {
     &__box {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@keyframes dish{
+    0% {
+        top: 50px;
+        opacity: 0;
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
     }
 }
