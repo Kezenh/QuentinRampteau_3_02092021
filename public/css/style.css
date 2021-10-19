@@ -110,11 +110,26 @@ header {
   border-radius: 15px;
   margin-top: 14px;
   background: white;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn__base--dish:hover .btn__base--dish__check {
+  width: 59px;
+}
+.btn__base--dish:hover .btn__base--dish__check__logo {
+  transform: rotate(360deg);
+  left: 0px;
 }
 .btn__base--dish__text {
   width: 277px;
   height: 100%;
   padding: 13px 0px 0px 10px;
+  overflow: hidden;
+}
+.btn__base--dish__text__p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .btn__base--dish__price {
   display: flex;
@@ -127,6 +142,20 @@ header {
 .btn__base--dish__check {
   width: 0px;
   height: 100%;
+  background: #99E2D0;
+  transition: all 500ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.btn__base--dish__check__logo {
+  width: 20px;
+  height: 20px;
+  color: white;
+  transition: all 500ms;
+  position: relative;
+  left: 35px;
 }
 
 .puce {
@@ -218,6 +247,7 @@ header {
 .heart__logo {
   width: 22px;
   height: 21px;
+  cursor: pointer;
 }
 .heart__logo--click {
   position: absolute;

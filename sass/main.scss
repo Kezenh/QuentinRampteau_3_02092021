@@ -127,13 +127,35 @@ header {
             border-radius: 15px;
             margin-top: 14px;
             background: white;
+            overflow: hidden;
+            cursor: pointer;
+
+            &:hover {
+
+                .btn__base--dish__check {
+                    width: 59px;
+                }
+
+                .btn__base--dish__check__logo {
+                    transform: rotate(360deg);
+                    left: 0px;
+                }
+            }
 
             &__text {
                 width: 277px;
                 height: 100%;
                 padding: 13px 0px 0px 10px;
+                overflow: hidden;
+    
+                &__p {
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
             }
 
+                
             &__price {
                 display: flex;
                 justify-content: center;
@@ -146,6 +168,21 @@ header {
             &__check {
                 width: 0px;
                 height: 100%;
+                background: $tertiary-color;
+                transition: all 500ms;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+                &__logo {
+                    width: 20px;
+                    height: 20px;
+                    color: white;
+                    transition: all 500ms;
+                    position: relative;
+                    left: 35px;
+                }
             }
         }
     }   
@@ -249,6 +286,7 @@ header {
     &__logo {
         width: 22px;
         height: 21px;
+        cursor: pointer;
 
         &--click {
             position: absolute;
