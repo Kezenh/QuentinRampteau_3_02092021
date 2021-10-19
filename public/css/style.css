@@ -310,13 +310,23 @@ footer {
 .menu__heading {
   display: flex;
   justify-content: space-between;
-  padding: 0px 26px 45px 0px;
+  padding: 0px 26px 5px 0px;
   font-family: "Shrikhand", cursive;
+}
+.menu__heading__h1 {
+  font-size: 1.6rem;
+}
+.menu__part {
+  padding-top: 40px;
 }
 .menu__part__line {
   width: 40px;
   height: 3px;
   background: #99E2D0;
+}
+.menu__box {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
