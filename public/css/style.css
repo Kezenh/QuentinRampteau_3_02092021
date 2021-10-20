@@ -401,8 +401,8 @@ footer {
 .loading {
   width: 100%;
   height: 100%;
-  position: absolute;
-  background: #FF79DA;
+  position: fixed;
+  background: #9356DC;
   z-index: 1;
   display: flex;
   justify-content: center;
