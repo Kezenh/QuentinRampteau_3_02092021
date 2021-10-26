@@ -1,0 +1,24 @@
+.ul_footer {
+    padding: 15px 0px 25px;
+    
+    @media (min-width: 767px) {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__li {
+        display: flex;
+        align-items: center;
+
+        &__image {
+            width: 12px;
+            height: 13px;
+            margin-right: 12px;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}

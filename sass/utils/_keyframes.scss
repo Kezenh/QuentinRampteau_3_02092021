@@ -1,0 +1,22 @@
+@keyframes dish{
+    0% {
+        top: 50px;
+        opacity: 0;
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes loading {
+    100% {
+        transform: scale(0,0);
+    }
+}
+
+@keyframes loader {
+    100% {
+        transform: rotate(360deg);
+    }
+}

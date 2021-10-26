@@ -1,0 +1,18 @@
+.introduction {
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px 57px;
+
+    &__h1 {
+        text-align: center;
+        font-size: $h-font-size;
+    }
+
+    &__h2 {
+        padding-bottom: 31px;
+        font-weight: normal;
+        text-align: center;
+    }
+}

@@ -1,0 +1,17 @@
+.loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: $primary-color;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loading 500ms 2000ms forwards;
+
+    &__loader {
+        width: 30%;
+        color: $tertiary-color;
+        animation: loader 2500ms linear;
+    }
+}

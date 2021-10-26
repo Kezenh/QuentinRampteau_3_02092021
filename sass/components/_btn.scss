@@ -1,0 +1,129 @@
+.btn {
+    display: block;
+    text-decoration: none;
+
+    &__base {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--réservez {
+            height: 50px;
+            width: 218px;
+            background: linear-gradient(165deg,$secondary-color, $primary-color);
+            color: white;
+            border-radius: 25px;
+            box-shadow: 0px 8px 8px #cfcfcf;
+
+            &:hover {
+                box-shadow: 0px 12px 12px grey ;
+                background: linear-gradient(165deg, darken($secondary-color, 30%) , darken($primary-color, 30%));
+            }
+        }
+
+        &--fonctionnement {
+            width: 322px;
+            height: 72px;
+            background: #f6f6f6;
+            border-radius: 17px;
+            justify-content: flex-start;
+            padding-left: 34px; 
+            margin: 0px 0px 25px 13px;
+
+            &:hover {
+                background: #f5edff;
+                .btn__base--fonctionnement__icônes {
+                    color: #9356dc;
+                }
+            }
+
+            &__icônes {
+                width: 20px;
+                height: 20px;
+                margin-right: 21px;
+                color: #7e7e7e;
+            }
+        }
+
+        &--nouveau {
+            width: 81px;
+            height: 29px;
+            background: $tertiary-color;
+            position: relative;
+            bottom: 238px;
+            left: 249px;
+            color: #008766;
+        }
+        
+        &--dish {
+            width: 349px;
+            height: 68px;
+            border-radius: 15px;
+            margin-top: 14px;
+            background: white;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+
+            @for $i from 0 through 9 {
+                &--#{$i} {
+                    animation: dish 1000ms ($i*50)+100ms;
+                }
+            }
+
+            &:hover {
+
+                .btn__base--dish__check {
+                    width: 59px;
+                }
+
+                .btn__base--dish__check__logo {
+                    transform: rotate(360deg);
+                    left: 0px;
+                }
+            }
+
+            &__text {
+                width: 277px;
+                height: 100%;
+                padding: 13px 0px 0px 10px;
+                overflow: hidden;
+    
+                &__p {
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+            }
+
+            &__price {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                padding-bottom: 15px;
+                width: 72px;
+                height: 100%;
+            }
+
+            &__check {
+                width: 0px;
+                height: 100%;
+                background: $tertiary-color;
+                transition: all 500ms;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+                &__logo {
+                    width: 20px;
+                    height: 20px;
+                    color: white;
+                    transition: all 500ms;
+                    position: relative;
+                    left: 35px;
+                }
+            }
+        }
+    }   
+}

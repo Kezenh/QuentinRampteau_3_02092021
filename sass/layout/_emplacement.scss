@@ -1,0 +1,13 @@
+.emplacement {
+    background: #eaeaea;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  inset 0px 5px 5px #cfcfcf;
+
+    &__gps {
+        width: 12px;
+        margin-right: 18px;
+    }
+}

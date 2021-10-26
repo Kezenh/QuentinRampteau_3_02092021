@@ -1,0 +1,26 @@
+.sec {
+    width: 350px;
+    padding: 50px 0px 43px;
+    margin: auto;
+
+    @media (min-width: 767px) {
+        width: 767px;
+    }
+
+    @media (min-width: 1024px) {
+        width: 90%;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    &__h2 {
+        font-size: $h-font-size;
+        margin-bottom: 30px;
+        align-self: flex-start;
+    }
+}

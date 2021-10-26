@@ -1,0 +1,26 @@
+.heart {
+    width: 22px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        .heart__logo--click {
+            opacity: 1;
+        }            
+    }
+
+    &__logo {
+        width: 22px;
+        height: 21px;
+        cursor: pointer;
+
+        &--click {
+            position: absolute;
+            color: $secondary-color;
+            opacity: 0;
+            transition: opacity 250ms;
+        }
+    }
+}

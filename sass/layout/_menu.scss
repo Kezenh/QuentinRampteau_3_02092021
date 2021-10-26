@@ -1,0 +1,46 @@
+.menu {
+    padding: 0px 12px 0px 19px;
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0px 26px 5px 0px;
+        font-family: $heading-font-family;
+        position: relative;
+        top: -45px;
+        border-radius: 38px;
+        background: #f6f6f6;
+        height: 76px;
+        margin: 0px -12px -40px -19px;
+        padding: 0px 12px 0px 19px;
+
+        &__h1{
+            font-size: 1.6rem;
+        }
+    }
+
+    &__part {
+        padding-top: 40px;
+
+        &__line {
+            width: 40px;
+            height: 3px;
+            background: $tertiary-color;
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        width: 341px;
+        margin: auto;
+
+        @media (min-width: 767px) {
+            width: 90%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+}
