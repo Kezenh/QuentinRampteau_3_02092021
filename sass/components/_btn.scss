@@ -17,7 +17,7 @@
 
             &:hover {
                 box-shadow: 0px 12px 12px grey ;
-                background: linear-gradient(165deg, darken($secondary-color, 30%) , darken($primary-color, 30%));
+                background: linear-gradient(165deg, lighten($secondary-color, 5%) , lighten($primary-color, 5%));
             }
         }
 
