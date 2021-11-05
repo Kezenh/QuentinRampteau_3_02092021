@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
 
-    &:hover {
+    &:hover, &:active {
         .heart__logo--click {
             opacity: 1;
         }            
